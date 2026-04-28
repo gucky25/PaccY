@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PaccY</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar" aria-label="PaccY status">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <h1>PaccY</h1>
+            <p id="levelName">Neon Docks</p>
+          </div>
+        </div>
+
+        <div class="stats" aria-live="polite">
+          <div class="stat">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="stat">
+            <span>Beste</span>
+            <strong id="highScore">0</strong>
+          </div>
+          <div class="stat">
+            <span>Level</span>
+            <strong id="level">1</strong>
+          </div>
+          <div class="lives" id="lives" aria-label="Levens"></div>
+        </div>
+
+        <div class="toolbar">
+          <button class="button primary" id="startButton" type="button">Start</button>
+          <button class="button icon-button" id="pauseButton" type="button" aria-label="Pauze">II</button>
+          <button class="button icon-button" id="soundButton" type="button" aria-label="Geluid">Sound</button>
+        </div>
+      </header>
+
+      <section class="stage" aria-label="PaccY speelveld">
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="504" height="576"></canvas>
+          <div class="screen" id="screen">
+            <div class="screen-panel">
+              <h2 id="screenTitle">PaccY</h2>
+              <p id="screenCopy">Neon haptocht klaar.</p>
+              <button class="button primary" id="screenButton" type="button">Start</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="status-strip">
+        <span id="statusText">Klaar voor level 1</span>
+        <span id="pelletText">0 snacks over</span>
+      </footer>
+    </main>
+  </body>
+</html>
