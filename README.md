@@ -35,5 +35,8 @@ Bestanden:
 - `styles.css`
 - `game.js`
 - `PLAN.md`
+- `CODEX_CONTEXT.md`
 - `VERSION`
 - `CHANGELOG.md`
+
+Voor een nieuwe Codex-sessie staat de overdracht en projectcontext in `CODEX_CONTEXT.md`.
